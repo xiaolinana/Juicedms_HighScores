@@ -1,1 +1,1 @@
-This is a [Next.js](https:/
+This is a [Next.js](https://nextjs.org/) project
