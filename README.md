@@ -12,4 +12,4 @@ yarn dev
 pnpm dev
 ```
 
-Open [http:
+Open [http://localhost:3000](http
