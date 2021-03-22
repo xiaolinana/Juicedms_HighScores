@@ -17,4 +17,5 @@
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gr
+  --secondary-glow: radial-gradient(
+    rgb
