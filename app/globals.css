@@ -24,4 +24,5 @@
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gr
+  --tile-border: conic-gradient(
+    #0000008
