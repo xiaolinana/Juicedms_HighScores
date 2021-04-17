@@ -40,4 +40,5 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme
+@media (prefers-color-scheme: dark) {
+  :roo
