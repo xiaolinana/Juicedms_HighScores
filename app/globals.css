@@ -42,4 +42,4 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foregr
+    --foreground-rgb: 255, 2
