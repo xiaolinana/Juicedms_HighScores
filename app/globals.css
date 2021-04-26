@@ -47,4 +47,5 @@
     --background-end-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linea
+    --secondary-glow: linear-gradient(
+      t
