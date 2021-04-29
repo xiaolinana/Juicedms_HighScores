@@ -54,4 +54,5 @@
       rgba(1, 65, 255, 0.3)
     );
 
-    --tile-start-rgb: 2, 13, 46
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb
