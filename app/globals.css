@@ -82,4 +82,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x
+  overflow-x: hidden;
+}
+
+body {
