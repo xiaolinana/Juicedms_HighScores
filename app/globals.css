@@ -97,4 +97,5 @@ body {
 
 a {
   color: inherit;
-  text-dec
+  text-decoration: none;
+}
