@@ -92,4 +92,8 @@ body {
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-r
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color:
