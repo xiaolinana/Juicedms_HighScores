@@ -21,3 +21,27 @@
 }
 
 .description p, .description h2 {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+}
+
+.red {
+  color: saddlebrown;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: calc(var(--max-width) - 40px);
+}
+
+.card {
+  height: 182px;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  transition-property: left, top, transform;
+  transition-duration: 250ms, 250ms, 100ms;
