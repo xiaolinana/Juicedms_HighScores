@@ -45,3 +45,27 @@
   border-radius: var(--border-radius);
   transition-property: left, top, transform;
   transition-duration: 250ms, 250ms, 100ms;
+  transform: scale(1);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+/* Mobile and Tablet */
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+
+  .grid {
+    width: 90%;
+  }
