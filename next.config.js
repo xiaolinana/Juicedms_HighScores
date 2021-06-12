@@ -1,3 +1,4 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimenta
+  experimental: {
+    appDir: tru
