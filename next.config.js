@@ -5,4 +5,4 @@ const nextConfig = {
   },
 }
 
-module
+module.exports = nextConfig
