@@ -2,4 +2,5 @@
   "name": "2048-game",
   "version": "0.1.0",
   "private": true,
-  "scripts"
+  "scripts": {
+    "dev": "next 
