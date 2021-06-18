@@ -9,4 +9,4 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ne
+    "@next/font": "13.1.6
