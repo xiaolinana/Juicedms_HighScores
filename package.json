@@ -19,4 +19,5 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tiny-invariant": "^1.3.1",
-    "typescript": "4
+    "typescript": "4.9.5",
+    "use-debounce": "^
