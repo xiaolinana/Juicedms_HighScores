@@ -1,1 +1,1 @@
-// Next.js API route support: https:/
+// Next.js API route support: https://nextjs.org/docs/ap
