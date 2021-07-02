@@ -5,4 +5,5 @@ type Data = {
   name: string
 }
 
-export defa
+export default function handler(
+ 
