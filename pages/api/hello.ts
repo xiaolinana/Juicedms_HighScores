@@ -9,4 +9,4 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.stat
+  res.status(200).json({ name: 'Joh
