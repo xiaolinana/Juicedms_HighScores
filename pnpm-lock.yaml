@@ -686,3 +686,23 @@ packages:
       has: 1.0.3
       has-tostringtag: 1.0.0
     dev: false
+
+  /es-shim-unscopables/1.0.0:
+    resolution: {integrity: sha512-Jm6GPcCdC30eMLbZ2x8z2WuRwAws3zTBBKuusffYVUrNj/GVSUAZ+xKMaUpfNDR5IbyNA5LJbaecoUVbmUcB1w==}
+    dependencies:
+      has: 1.0.3
+    dev: false
+
+  /es-to-primitive/1.2.1:
+    resolution: {integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      is-callable: 1.2.7
+      is-date-object: 1.0.5
+      is-symbol: 1.0.4
+    dev: false
+
+  /escape-string-regexp/4.0.0:
+    resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
+    engines: {node: '>=10'}
+    dev: false
