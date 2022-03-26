@@ -1657,3 +1657,15 @@ packages:
       define-properties: 1.2.0
       es-abstract: 1.21.1
     dev: false
+
+  /object.hasown/1.1.2:
+    resolution: {integrity: sha512-B5UIT3J1W+WuWIU55h0mjlwaqxiE5vYENJXIXZ4VFe05pNYrkKuK0U/6aFcb0pKywYJh7IhfoqUfKVmrJJHZHw==}
+    dependencies:
+      define-properties: 1.2.0
+      es-abstract: 1.21.1
+    dev: false
+
+  /object.values/1.1.6:
+    resolution: {integrity: sha512-FVVTkD1vENCsAcwNs9k6jea2uHC/X0+JcjG8YA60FN5CMaJmG95wT9jek/xX9nornqGRrBkKtzuAu2wuHpKqvw==}
+    engines: {node: '>= 0.4'}
+    dependencies:
