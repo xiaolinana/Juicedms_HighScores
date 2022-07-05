@@ -6,3 +6,4 @@ import invariant from "tiny-invariant";
 
 interface BlockProps {
     value: number
+    position:
