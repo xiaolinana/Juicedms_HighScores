@@ -8,3 +8,5 @@ interface BlockProps {
     value: number
     position: [number, number]
 }
+
+const Block = ({
