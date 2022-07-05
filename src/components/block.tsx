@@ -4,4 +4,5 @@ import {usePrevProps} from "@/src/hooks/use-prev-props";
 import {useBoard} from "@/src/contexts/board";
 import invariant from "tiny-invariant";
 
-interface BlockPro
+interface BlockProps {
+    value: number
