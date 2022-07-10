@@ -9,4 +9,4 @@ interface BlockProps {
     position: [number, number]
 }
 
-const Block = ({ value, position }:
+const Block = ({ value, position }: BlockProps) =
