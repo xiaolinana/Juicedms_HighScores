@@ -10,4 +10,4 @@ interface BlockProps {
 }
 
 const Block = ({ value, position }: BlockProps) => {
-    const [scale,
+    const [scale, setScale] = useState(
