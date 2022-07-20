@@ -11,4 +11,4 @@ interface BlockProps {
 
 const Block = ({ value, position }: BlockProps) => {
     const [scale, setScale] = useState(1);
-    const [container
+    const [containerWidth, tileCount] = useBoa
