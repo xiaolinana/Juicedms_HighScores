@@ -15,4 +15,4 @@ const Block = ({ value, position }: BlockProps) => {
 
     const prevValue = usePrevProps<number>(value);
 
-    const i
+    const isNew = prevValue
