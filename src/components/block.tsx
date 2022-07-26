@@ -13,4 +13,6 @@ const Block = ({ value, position }: BlockProps) => {
     const [scale, setScale] = useState(1);
     const [containerWidth, tileCount] = useBoard();
 
-    const prevValue = usePrevProps<number>(val
+    const prevValue = usePrevProps<number>(value);
+
+    const i
