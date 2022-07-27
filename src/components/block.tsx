@@ -15,4 +15,4 @@ const Block = ({ value, position }: BlockProps) => {
 
     const prevValue = usePrevProps<number>(value);
 
-    const isNew = prevValue
+    const isNew = prevValue === undef
