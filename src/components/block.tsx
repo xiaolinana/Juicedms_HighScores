@@ -16,4 +16,5 @@ const Block = ({ value, position }: BlockProps) => {
     const prevValue = usePrevProps<number>(value);
 
     const isNew = prevValue === undefined;
-    const hasChanged = prevValue !== valu
+    const hasChanged = prevValue !== value;
+    const shallAn
