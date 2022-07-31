@@ -19,4 +19,4 @@ const Block = ({ value, position }: BlockProps) => {
     const hasChanged = prevValue !== value;
     const shallAnimate = isNew || hasChanged;
 
- 
+    const withinBoa
