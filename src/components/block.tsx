@@ -20,4 +20,4 @@ const Block = ({ value, position }: BlockProps) => {
     const shallAnimate = isNew || hasChanged;
 
     const withinBoardBoundaries =
-        position[
+        position[0] < tileCoun
