@@ -17,4 +17,6 @@ const Block = ({ value, position }: BlockProps) => {
 
     const isNew = prevValue === undefined;
     const hasChanged = prevValue !== value;
-    const shallAnimate = isNew |
+    const shallAnimate = isNew || hasChanged;
+
+ 
