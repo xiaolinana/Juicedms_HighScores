@@ -20,4 +20,5 @@ const Block = ({ value, position }: BlockProps) => {
     const shallAnimate = isNew || hasChanged;
 
     const withinBoardBoundaries =
-        position[0] < tileCount && position[1] < tileCo
+        position[0] < tileCount && position[1] < tileCount;
+    invariant(w
