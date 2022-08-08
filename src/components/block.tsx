@@ -21,4 +21,5 @@ const Block = ({ value, position }: BlockProps) => {
 
     const withinBoardBoundaries =
         position[0] < tileCount && position[1] < tileCount;
-    invariant(withinBoardBoundaries, "Tile 
+    invariant(withinBoardBoundaries, "Tile out of bound");
+
