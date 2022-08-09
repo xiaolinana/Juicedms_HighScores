@@ -23,3 +23,5 @@ const Block = ({ value, position }: BlockProps) => {
         position[0] < tileCount && position[1] < tileCount;
     invariant(withinBoardBoundaries, "Tile out of bound");
 
+    useEffect(() => {
+    
