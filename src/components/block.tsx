@@ -26,4 +26,4 @@ const Block = ({ value, position }: BlockProps) => {
     useEffect(() => {
         if (shallAnimate) {
             setScale(1.1);
-       
+            setTimeout(() => s
