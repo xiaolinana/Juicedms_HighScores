@@ -25,4 +25,5 @@ const Block = ({ value, position }: BlockProps) => {
 
     useEffect(() => {
         if (shallAnimate) {
-            se
+            setScale(1.1);
+       
