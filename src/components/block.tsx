@@ -24,4 +24,5 @@ const Block = ({ value, position }: BlockProps) => {
     invariant(withinBoardBoundaries, "Tile out of bound");
 
     useEffect(() => {
-        if (shallAni
+        if (shallAnimate) {
+            se
