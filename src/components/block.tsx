@@ -28,3 +28,4 @@ const Block = ({ value, position }: BlockProps) => {
             setScale(1.1);
             setTimeout(() => setScale(1), 100);
         }
+    }, [shallAni
