@@ -30,4 +30,4 @@ const Block = ({ value, position }: BlockProps) => {
         }
     }, [shallAnimate, scale]);
 
-    con
+    const positionToPixel
