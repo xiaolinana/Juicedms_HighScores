@@ -31,4 +31,4 @@ const Block = ({ value, position }: BlockProps) => {
     }, [shallAnimate, scale]);
 
     const positionToPixels = (position: number) => {
-        re
+        return (position 
