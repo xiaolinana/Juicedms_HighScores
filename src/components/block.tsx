@@ -34,4 +34,4 @@ const Block = ({ value, position }: BlockProps) => {
         return (position / tileCount) * (containerWidth as number);
     };
 
-  
+    // all animations
