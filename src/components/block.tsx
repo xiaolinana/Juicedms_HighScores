@@ -34,4 +34,5 @@ const Block = ({ value, position }: BlockProps) => {
         return (position / tileCount) * (containerWidth as number);
     };
 
-    // all animations come from CSS transition, and we pass them 
+    // all animations come from CSS transition, and we pass them as styles
+    c
