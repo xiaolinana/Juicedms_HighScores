@@ -35,4 +35,5 @@ const Block = ({ value, position }: BlockProps) => {
     };
 
     // all animations come from CSS transition, and we pass them as styles
-    c
+    const style = {
+  
