@@ -37,4 +37,4 @@ const Block = ({ value, position }: BlockProps) => {
     // all animations come from CSS transition, and we pass them as styles
     const style = {
         top: positionToPixels(position[1]),
-        left: positionTo
+        left: positionToPixels(position
