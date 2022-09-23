@@ -38,4 +38,7 @@ const Block = ({ value, position }: BlockProps) => {
     const style = {
         top: positionToPixels(position[1]),
         left: positionToPixels(position[0]),
-        transform: `scale(${scal
+        transform: `scale(${scale})`,
+    };
+
+    re
