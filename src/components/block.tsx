@@ -42,4 +42,5 @@ const Block = ({ value, position }: BlockProps) => {
     };
 
     return (
-        <div className={styles.ca
+        <div className={styles.card} style={style}>
+  
