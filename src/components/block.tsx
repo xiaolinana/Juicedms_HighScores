@@ -42,4 +42,4 @@ const Block = ({ value, position }: BlockProps) => {
     };
 
     return (
-        <div cla
+        <div className={styles.ca
