@@ -41,4 +41,5 @@ const Block = ({ value, position }: BlockProps) => {
         transform: `scale(${scale})`,
     };
 
-    re
+    return (
+        <div cla
