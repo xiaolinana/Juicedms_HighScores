@@ -43,4 +43,4 @@ const Block = ({ value, position }: BlockProps) => {
 
     return (
         <div className={styles.card} style={style}>
-  
+            {value
