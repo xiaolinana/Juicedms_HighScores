@@ -48,4 +48,4 @@ const Block = ({ value, position }: BlockProps) => {
     );
 };
 
-expo
+export default Block;
