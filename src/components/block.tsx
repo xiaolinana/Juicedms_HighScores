@@ -45,4 +45,7 @@ const Block = ({ value, position }: BlockProps) => {
         <div className={styles.card} style={style}>
             {value}
         </div>
-   
+    );
+};
+
+expo
