@@ -2,4 +2,4 @@
 
 import React, {useContext} from "react";
 
-export const Boar
+export const BoardContext = React.creat
