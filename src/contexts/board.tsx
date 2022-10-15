@@ -8,4 +8,4 @@ export const BoardContext = React.createContext({
 });
 
 type Props = {
-    cont
+    containerWidth: numbe
