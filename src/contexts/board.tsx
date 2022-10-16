@@ -9,4 +9,5 @@ export const BoardContext = React.createContext({
 
 type Props = {
     containerWidth: number;
-    tileCount: numbe
+    tileCount: number;
+    children: a
