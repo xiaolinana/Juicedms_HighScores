@@ -13,4 +13,4 @@ type Props = {
     children: any;
 };
 
-export co
+export const BoardProvid
