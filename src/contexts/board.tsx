@@ -19,4 +19,4 @@ export const BoardProvider = ({
                                   tileCount = 4,
                               }: Props) => {
     return (
-        <BoardContext.Provi
+        <BoardContext.Provider valu
