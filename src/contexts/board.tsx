@@ -20,4 +20,5 @@ export const BoardProvider = ({
                               }: Props) => {
     return (
         <BoardContext.Provider value={{ containerWidth, tileCount }}>
-           
+            {children}
+       
