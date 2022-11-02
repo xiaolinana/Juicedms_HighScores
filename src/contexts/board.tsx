@@ -21,4 +21,4 @@ export const BoardProvider = ({
     return (
         <BoardContext.Provider value={{ containerWidth, tileCount }}>
             {children}
-       
+        </BoardContext.
