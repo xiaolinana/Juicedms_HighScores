@@ -25,4 +25,4 @@ export const BoardProvider = ({
     );
 };
 
-export
+export const useBoard = () => {
