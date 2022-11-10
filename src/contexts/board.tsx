@@ -26,4 +26,4 @@ export const BoardProvider = ({
 };
 
 export const useBoard = () => {
-    const {
+    const { containerWidth, t
