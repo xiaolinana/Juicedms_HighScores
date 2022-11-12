@@ -26,4 +26,4 @@ export const BoardProvider = ({
 };
 
 export const useBoard = () => {
-    const { containerWidth, t
+    const { containerWidth, tileCount } = useConte
