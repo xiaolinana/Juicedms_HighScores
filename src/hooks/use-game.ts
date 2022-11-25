@@ -19,3 +19,20 @@ export const useGame = () => {
             } as BlockType;
             dispatch({ type: "CREATE_TILE", tile });
         },
+        [nextId]
+    );
+
+    const mergeTile = (source: BlockType, destination: BlockType) => {
+        dispatch({ type: "MERGE_TILE", source, destination });
+    };
+
+    // A must-have to keep the sliding animation if the action merges tiles together.
+    const throttledMergeTile = (source: BlockType, destination: BlockType) => {
+        setTimeout(() => mergeTile(source, destination), 100);
+    };
+
+    const updateTile = (tile: BlockType) => {
+        dispatch({ type: "UPDATE_TILE", tile });
+    };
+
+    const didTileMove = (source: BlockType, destination: BlockType) => {
