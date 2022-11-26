@@ -36,3 +36,22 @@ export const useGame = () => {
     };
 
     const didTileMove = (source: BlockType, destination: BlockType) => {
+        const hasXChanged = source.position[0] !== destination.position[0];
+        const hasYChanged = source.position[1] !== destination.position[1];
+
+        return hasXChanged || hasYChanged;
+    };
+
+    const retrieveTileMap = useCallback(() => {
+        const tileMap = new Array(
+            4 * 4
+        ).fill('0');
+
+        byIds.forEach((id) => {
+            const { position } = tiles[id];
+            const index = positionToIndex(position);
+            tileMap[index] = id;
+        });
+
+        return tileMap;
+    }, [byIds, tiles]);
