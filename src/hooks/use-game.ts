@@ -72,3 +72,17 @@ export const useGame = () => {
 
     const generateRandomTile = useCallback(() => {
         const emptyTiles = findEmptyTiles();
+
+        if (emptyTiles.length > 0) {
+            const index = Math.floor(Math.random() * emptyTiles.length);
+            const position = emptyTiles[index];
+
+            createTile({ position, value: 2 });
+        }
+    }, [findEmptyTiles, createTile]);
+
+    const positionToIndex = (position: [number, number]) => {
+        return position[1] * 4 + position[0];
+    };
+
+    const indexToPosition = (index: number) => {
