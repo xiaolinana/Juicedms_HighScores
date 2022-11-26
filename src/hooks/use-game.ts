@@ -86,3 +86,20 @@ export const useGame = () => {
     };
 
     const indexToPosition = (index: number) => {
+        const x = index % 4;
+        const y = Math.floor(index / 4);
+        return [x, y];
+    };
+
+    type RetrieveTileIdsPerRowOrColumn = (rowOrColumnIndex: number) => number[];
+
+    type CalculateTileIndex = (
+        tileIndex: number,
+        tileInRowIndex: number,
+        howManyMerges: number,
+        maxIndexInRow: number
+    ) => number;
+
+    const move = (
+        retrieveTileIdsPerRowOrColumn: RetrieveTileIdsPerRowOrColumn,
+        calculateFirstFreeIndex: CalculateTileIndex
