@@ -55,3 +55,20 @@ export const useGame = () => {
 
         return tileMap;
     }, [byIds, tiles]);
+
+    const findEmptyTiles = useCallback(() => {
+        const tileMap = retrieveTileMap();
+
+        const emptyTiles = tileMap.reduce((result, tileId, index) => {
+            if (tileId === 0) {
+                return [...result, indexToPosition(index) as [number, number]];
+            }
+
+            return result;
+        }, [] as [number, number][]);
+
+        return emptyTiles;
+    }, [retrieveTileMap]);
+
+    const generateRandomTile = useCallback(() => {
+        const emptyTiles = findEmptyTiles();
