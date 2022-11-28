@@ -103,3 +103,17 @@ export const useGame = () => {
     const move = (
         retrieveTileIdsPerRowOrColumn: RetrieveTileIdsPerRowOrColumn,
         calculateFirstFreeIndex: CalculateTileIndex
+    ) => {
+        // new tiles cannot be created during motion.
+        dispatch({ type: "START_MOVE" });
+
+        const maxIndex = 4 - 1;
+
+        // iterates through every row or column (depends on move kind - vertical or horizontal).
+        for (
+            let rowOrColumnIndex = 0;
+            rowOrColumnIndex < 4;
+            rowOrColumnIndex += 1
+        ) {
+            // retrieves tiles in the row or column.
+            const availableTileIds = retrieveTileIdsPerRowOrColumn(rowOrColumnIndex);
