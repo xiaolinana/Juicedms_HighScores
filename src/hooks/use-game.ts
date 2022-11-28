@@ -117,3 +117,16 @@ export const useGame = () => {
         ) {
             // retrieves tiles in the row or column.
             const availableTileIds = retrieveTileIdsPerRowOrColumn(rowOrColumnIndex);
+
+            // previousTile is used to determine if tile can be merged with the current tile.
+            let previousTile: BlockType | undefined;
+            // mergeCount helps to fill gaps created by tile merges - two tiles become one.
+            let mergedTilesCount = 0;
+
+            // interate through available tiles.
+            availableTileIds.forEach((tileId, nonEmptyTileIndex) => {
+                const currentTile = tiles[tileId];
+
+                // if previous tile has the same value as the current one they should be merged together.
+                if (
+                    previousTile !== undefined &&
