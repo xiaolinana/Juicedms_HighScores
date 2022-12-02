@@ -147,3 +147,26 @@ export const useGame = () => {
 
                     return updateTile(tile);
                 }
+
+                // else - previous and current tiles are different - move the tile to the first free space.
+                const tile = {
+                    ...currentTile,
+                    position: indexToPosition(
+                        calculateFirstFreeIndex(
+                            rowOrColumnIndex,
+                            nonEmptyTileIndex,
+                            mergedTilesCount,
+                            maxIndex
+                        )
+                    ),
+                } as BlockType;
+
+                // previous tile become the current tile to check if the next tile can be merged with this one.
+                previousTile = tile;
+
+                // only if tile has changed its position it will be updated
+                if (didTileMove(currentTile, tile)) {
+                    return updateTile(tile);
+                }
+            });
+        }
