@@ -130,3 +130,20 @@ export const useGame = () => {
                 // if previous tile has the same value as the current one they should be merged together.
                 if (
                     previousTile !== undefined &&
+                    previousTile.value === currentTile.value
+                ) {
+                    const tile = {
+                        ...currentTile,
+                        position: previousTile.position,
+                        mergeWith: previousTile.id,
+                    } as unknown as BlockType;
+
+                    // delays the merge by 250ms, so the sliding animation can be completed.
+                    throttledMergeTile(tile, previousTile);
+                    // previous tile must be cleared as a single tile can be merged only once per move.
+                    previousTile = undefined;
+                    // increment the merged counter to correct position for the consecutive tiles to get rid of gaps
+                    mergedTilesCount += 1;
+
+                    return updateTile(tile);
+                }
