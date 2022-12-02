@@ -170,3 +170,21 @@ export const useGame = () => {
                 }
             });
         }
+
+        // wait until the end of all animations.
+        setTimeout(() => dispatch({ type: "END_MOVE" }), 100);
+    };
+
+    const moveLeftFactory = () => {
+        const retrieveTileIdsByRow = (rowIndex: number) => {
+            const tileMap = retrieveTileMap();
+
+            const tileIdsInRow = [
+                tileMap[rowIndex * 4 + 0],
+                tileMap[rowIndex * 4 + 1],
+                tileMap[rowIndex * 4 + 2],
+                tileMap[rowIndex * 4 + 3],
+            ];
+
+            const nonEmptyTiles = tileIdsInRow.filter((id) => id !== 0);
+            return nonEmptyTiles;
