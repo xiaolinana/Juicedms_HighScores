@@ -188,3 +188,21 @@ export const useGame = () => {
 
             const nonEmptyTiles = tileIdsInRow.filter((id) => id !== 0);
             return nonEmptyTiles;
+        };
+
+        const calculateFirstFreeIndex = (
+            tileIndex: number,
+            tileInRowIndex: number,
+            howManyMerges: number,
+            _: number
+        ) => {
+            return (
+                tileIndex * 4 + tileInRowIndex - howManyMerges
+            );
+        };
+
+        return move.bind(this, retrieveTileIdsByRow, calculateFirstFreeIndex);
+    };
+
+    const moveRightFactory = () => {
+        const retrieveTileIdsByRow = (rowIndex: number) => {
