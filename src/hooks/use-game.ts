@@ -245,3 +245,27 @@ export const useGame = () => {
                 tileMap[columnIndex + 4 * 1],
                 tileMap[columnIndex + 4 * 2],
                 tileMap[columnIndex + 4 * 3],
+            ];
+
+            const nonEmptyTiles = tileIdsInColumn.filter((id) => id !== 0);
+            return nonEmptyTiles;
+        };
+
+        const calculateFirstFreeIndex = (
+            tileIndex: number,
+            tileInColumnIndex: number,
+            howManyMerges: number,
+            _: number
+        ) => {
+            return (
+                tileIndex +
+                4 * (tileInColumnIndex - howManyMerges)
+            );
+        };
+
+        return move.bind(this, retrieveTileIdsByColumn, calculateFirstFreeIndex);
+    };
+
+    const moveDownFactory = () => {
+        const retrieveTileIdsByColumn = (columnIndex: number) => {
+            const tileMap = retrieveTileMap();
