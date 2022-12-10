@@ -206,3 +206,27 @@ export const useGame = () => {
 
     const moveRightFactory = () => {
         const retrieveTileIdsByRow = (rowIndex: number) => {
+            const tileMap = retrieveTileMap();
+
+            const tileIdsInRow = [
+                tileMap[rowIndex * 4 + 0],
+                tileMap[rowIndex * 4 + 1],
+                tileMap[rowIndex * 4 + 2],
+                tileMap[rowIndex * 4 + 3],
+            ];
+
+            const nonEmptyTiles = tileIdsInRow.filter((id) => id !== 0);
+            return nonEmptyTiles.reverse();
+        };
+
+        const calculateFirstFreeIndex = (
+            tileIndex: number,
+            tileInRowIndex: number,
+            howManyMerges: number,
+            maxIndexInRow: number
+        ) => {
+            return (
+                tileIndex * 4 +
+                maxIndexInRow +
+                howManyMerges -
+                tileInRowIndex
