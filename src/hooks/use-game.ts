@@ -230,3 +230,18 @@ export const useGame = () => {
                 maxIndexInRow +
                 howManyMerges -
                 tileInRowIndex
+            );
+        };
+
+        return move.bind(this, retrieveTileIdsByRow, calculateFirstFreeIndex);
+    };
+
+    const moveUpFactory = () => {
+        const retrieveTileIdsByColumn = (columnIndex: number) => {
+            const tileMap = retrieveTileMap();
+
+            const tileIdsInColumn = [
+                tileMap[columnIndex + 4 * 0],
+                tileMap[columnIndex + 4 * 1],
+                tileMap[columnIndex + 4 * 2],
+                tileMap[columnIndex + 4 * 3],
