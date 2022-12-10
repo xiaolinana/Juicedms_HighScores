@@ -269,3 +269,25 @@ export const useGame = () => {
     const moveDownFactory = () => {
         const retrieveTileIdsByColumn = (columnIndex: number) => {
             const tileMap = retrieveTileMap();
+
+            const tileIdsInColumn = [
+                tileMap[columnIndex + 4 * 0],
+                tileMap[columnIndex + 4 * 1],
+                tileMap[columnIndex + 4 * 2],
+                tileMap[columnIndex + 4 * 3],
+            ];
+
+            const nonEmptyTiles = tileIdsInColumn.filter((id) => id !== 0);
+            return nonEmptyTiles.reverse();
+        };
+
+        const calculateFirstFreeIndex = (
+            tileIndex: number,
+            tileInColumnIndex: number,
+            howManyMerges: number,
+            maxIndexInColumn: number
+        ) => {
+            return (
+                tileIndex +
+                4 *
+                (maxIndexInColumn - tileInColumnIndex + howManyMerges)
