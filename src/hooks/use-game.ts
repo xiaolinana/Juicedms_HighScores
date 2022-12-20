@@ -291,3 +291,21 @@ export const useGame = () => {
                 tileIndex +
                 4 *
                 (maxIndexInColumn - tileInColumnIndex + howManyMerges)
+            );
+        };
+
+        return move.bind(this, retrieveTileIdsByColumn, calculateFirstFreeIndex);
+    };
+
+    useEffect(() => {
+        if (isInitialRender.current) {
+            createTile({ position: [0, 1], value: 2 });
+            createTile({ position: [0, 2], value: 2 });
+            isInitialRender.current = false;
+            return;
+        }
+
+        if (!inMotion && hasChanged) {
+            generateRandomTile();
+        }
+    }, [hasChanged, inMotion, createTile, generateRandomTile]);
