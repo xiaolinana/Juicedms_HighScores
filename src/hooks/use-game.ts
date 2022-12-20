@@ -309,3 +309,19 @@ export const useGame = () => {
             generateRandomTile();
         }
     }, [hasChanged, inMotion, createTile, generateRandomTile]);
+
+    const tileList = byIds.map((tileId) => tiles[tileId]);
+
+    const moveLeft = moveLeftFactory();
+    const moveRight = moveRightFactory();
+    const moveUp = moveUpFactory();
+    const moveDown = moveDownFactory();
+
+    return [tileList, moveLeft, moveRight, moveUp, moveDown] as [
+        BlockType[],
+        () => void,
+        () => void,
+        () => void,
+        () => void
+    ];
+};
