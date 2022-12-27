@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
 
 /**
- * `usePrevProps` stores the 
+ * `usePrevProps` stores the previous value of the prop.
+ *
