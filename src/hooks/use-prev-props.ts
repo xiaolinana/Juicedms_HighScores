@@ -6,4 +6,5 @@ import { useEffect, useRef } from "react";
  * @param {K} value
  * @returns {K | undefined}
  */
-export const usePrevProps = <K 
+export const usePrevProps = <K = any>(value: K) => {
+ 
