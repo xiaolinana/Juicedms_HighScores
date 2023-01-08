@@ -13,4 +13,4 @@ export const usePrevProps = <K = any>(value: K) => {
         ref.current = value;
     });
 
-  
+    return ref.curr
