@@ -10,4 +10,7 @@ export const usePrevProps = <K = any>(value: K) => {
     const ref = useRef<K>();
 
     useEffect(() => {
-        ref.current
+        ref.current = value;
+    });
+
+  
