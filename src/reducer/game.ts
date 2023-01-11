@@ -53,3 +53,16 @@ export const GameReducer = (state: State, action: Action) => {
             } = state.tiles;
             return {
                 ...state,
+                tiles: {
+                    ...restTiles,
+                    [action.destination.id]: {
+                        id: action.destination.id,
+                        value: action.source.value + action.destination.value,
+                        position: action.destination.position,
+                    },
+                },
+                byIds: state.byIds.filter((id) => id !== action.source.id),
+                hasChanged: true,
+            };
+        case "START_MOVE":
+            return {
