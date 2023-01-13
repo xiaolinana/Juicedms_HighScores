@@ -66,3 +66,15 @@ export const GameReducer = (state: State, action: Action) => {
             };
         case "START_MOVE":
             return {
+                ...state,
+                inMotion: true,
+            };
+        case "END_MOVE":
+            return {
+                ...state,
+                inMotion: false,
+            };
+        default:
+            return state;
+    }
+};
