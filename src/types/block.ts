@@ -1,1 +1,2 @@
-export ty
+export type BlockType = {
+    id: st
