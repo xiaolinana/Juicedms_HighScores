@@ -1,2 +1,3 @@
 export type BlockType = {
-    id: st
+    id: string;
+    position: [n
