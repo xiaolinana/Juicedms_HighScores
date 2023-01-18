@@ -1,1 +1,2 @@
-export const getLocalStor
+export const getLocalStorage = () => {
+    cons
