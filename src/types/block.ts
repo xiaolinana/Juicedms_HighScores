@@ -3,3 +3,4 @@ export type BlockType = {
     position: [number, number];
     value: number;
     mergeWith?: number;
+};
