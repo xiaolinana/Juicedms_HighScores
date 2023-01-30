@@ -1,2 +1,3 @@
 export const getLocalStorage = () => {
-    const getItem = (keyNa
+    const getItem = (keyName: string) => {
+     
