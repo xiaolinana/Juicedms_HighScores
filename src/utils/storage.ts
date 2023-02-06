@@ -1,3 +1,3 @@
 export const getLocalStorage = () => {
     const getItem = (keyName: string) => {
-        return window.lo
+        return window.localStorage.get
