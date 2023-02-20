@@ -4,4 +4,4 @@ export const getLocalStorage = () => {
     }
 
     const setItem = (keyName: string, value: string) => {
-        window.localS
+        window.localStorage.setItem(keyNa
