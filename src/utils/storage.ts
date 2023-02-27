@@ -7,4 +7,5 @@ export const getLocalStorage = () => {
         window.localStorage.setItem(keyName, value)
     }
 
-    const removeItem = (keyName: string) => 
+    const removeItem = (keyName: string) => {
+        window.localStorage.
