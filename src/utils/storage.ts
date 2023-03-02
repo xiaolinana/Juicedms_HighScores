@@ -11,4 +11,5 @@ export const getLocalStorage = () => {
         window.localStorage.removeItem(keyName)
     }
 
-    return {getItem, setItem, removeIt
+    return {getItem, setItem, removeItem}
+}
